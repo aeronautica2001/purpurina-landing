@@ -1,0 +1,66 @@
+import { useState, useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import ProductCard from '../components/ProductCard';
+import { CatalogService } from '../data/CatalogService';
+import './CatalogPage.css';
+
+const CatalogPage = () => {
+    const { category } = useParams();
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [categoryName, setCategoryName] = useState('');
+
+    useEffect(() => {
+        const fetchData = async () => {
+            setLoading(true);
+            try {
+                // Fetch products
+                const prodData = await CatalogService.getProductsByCategory(category);
+                setProducts(prodData);
+
+                // Try to find the category display name from the dynamic list
+                const cats = await CatalogService.getCategories();
+                const currentCat = cats.find(c => c.name.toLowerCase() === category.toLowerCase());
+                setCategoryName(currentCat ? currentCat.name : category.charAt(0).toUpperCase() + category.slice(1));
+
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+    }, [category]);
+
+    return (
+        <div className="catalog-page">
+            <div className="container">
+                <header className="catalog-header">
+                    <Link to="/" className="btn-back">← Volver al Inicio</Link>
+                    <h1>{categoryName}</h1>
+                    <p>Explora nuestra selección de {categoryName.toLowerCase()} diseñados para inspirarte.</p>
+                </header>
+
+                {loading ? (
+                    <div className="loading-state">
+                        <p>Cargando productos mágicos...</p>
+                    </div>
+                ) : products.length > 0 ? (
+                    <div className="product-grid">
+                        {products.map(product => (
+                            <ProductCard key={product.id} product={product} />
+                        ))}
+                    </div>
+                ) : (
+                    <div className="no-products">
+                        <p>Lo sentimos, no encontramos productos en esta categoría.</p>
+                        <Link to="/" className="btn-primary">Ver otras categorías</Link>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+};
+
+export default CatalogPage;

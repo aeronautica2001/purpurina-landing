@@ -1,0 +1,349 @@
+[
+    {
+        "id": 1,
+        "categoria": "cuadernos",
+        "nombre": "Notebook Floral",
+        "precio": "$25.000",
+        "imagen": "/assets/productos/cuadernos/tapa-dura.svg",
+        "imagenes": [
+            "/assets/productos/cuadernos/tapa-dura.svg",
+            "/assets/productos/cuadernos/artistico.svg",
+            "/assets/productos/cuadernos/bullet.svg"
+        ],
+        "badge": "Bestseller",
+        "descripcion": "Notebook con diseño floral delicado y acabados premium.",
+        "caracteristicas": [
+            "Tapa dura con acabado soft touch",
+            "100 hojas de 90g con puntos",
+            "Cierre con elástico rosa",
+            "Sobre interno decorado"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 2,
+        "categoria": "cuadernos",
+        "nombre": "Notebook Minimal Pastel",
+        "precio": "$18.000",
+        "imagen": "/assets/productos/cuadernos/universitario.svg",
+        "imagenes": [
+            "/assets/productos/cuadernos/universitario.svg",
+            "/assets/productos/cuadernos/pocket.svg"
+        ],
+        "badge": "Popular",
+        "descripcion": "Diseño limpio y moderno en tonos pastel suaves.",
+        "caracteristicas": [
+            "Tapa flexible resistente",
+            "80 hojas cuadriculadas",
+            "Espiral metálico blanco",
+            "Tamaño A5 portable"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 3,
+        "categoria": "cuadernos",
+        "nombre": "Notebook Creativo",
+        "precio": "$22.000",
+        "imagen": "/assets/productos/cuadernos/argollado.svg",
+        "imagenes": [
+            "/assets/productos/cuadernos/argollado.svg",
+            "/assets/productos/cuadernos/bullet.svg"
+        ],
+        "badge": "Nuevo",
+        "descripcion": "Acabados brillantes para resaltar tu creatividad.",
+        "caracteristicas": [
+            "Tapa con laminado holográfico",
+            "Hojas en blanco para sketch",
+            "Argollado doble O plateado",
+            "Incluye stickers decorativos"
+        ],
+        "disponibilidad": "Pocas unidades"
+    },
+    {
+        "id": 4,
+        "categoria": "cuadernos",
+        "nombre": "Cuaderno Artístico",
+        "precio": "$30.000",
+        "imagen": "/assets/productos/cuadernos/artistico.svg",
+        "imagenes": [
+            "/assets/productos/cuadernos/artistico.svg",
+            "/assets/productos/cuadernos/tapa-dura.svg"
+        ],
+        "descripcion": "Papel de alto gramaje para técnicas de acuarela y dibujo.",
+        "caracteristicas": [
+            "Papel de 200g libre de ácido",
+            "Ideal para técnicas húmedas",
+            "Tapa rígida entelada",
+            "Apertura 180 grados"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 5,
+        "categoria": "cuadernos",
+        "nombre": "Pocket Floral",
+        "precio": "$15.000",
+        "imagen": "/assets/productos/cuadernos/pocket.svg",
+        "imagenes": [
+            "/assets/productos/cuadernos/pocket.svg",
+            "/assets/productos/cuadernos/universitario.svg"
+        ],
+        "descripcion": "Libreta pequeña con diseño floral, ideal para carteras.",
+        "caracteristicas": [
+            "Tamaño bolsillo 10x15cm",
+            "Tapa flexible plastificada",
+            "40 hojas lisas",
+            "Costura a la vista"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 6,
+        "categoria": "cuadernos",
+        "nombre": "Bullet Journal",
+        "precio": "$35.000",
+        "imagen": "/assets/productos/cuadernos/bullet.svg",
+        "imagenes": [
+            "/assets/productos/cuadernos/bullet.svg",
+            "/assets/productos/cuadernos/argollado.svg"
+        ],
+        "badge": "Popular",
+        "descripcion": "Puntos guía para organizar tu vida con creatividad.",
+        "caracteristicas": [
+            "Hojas de 120g numeradas",
+            "Índice y registro futuro",
+            "Dos cintas marcadoras",
+            "Test de pluma incluido"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 7,
+        "categoria": "lapiceros",
+        "nombre": "Set Colores Pastel",
+        "precio": "$15.000",
+        "imagen": "/assets/productos/lapiceros/azul.svg",
+        "imagenes": [
+            "/assets/productos/lapiceros/azul.svg",
+            "/assets/productos/lapiceros/premium.svg",
+            "/assets/productos/lapiceros/set.svg"
+        ],
+        "badge": "Nuevo",
+        "descripcion": "Kit de escritura con los tonos insignia de la marca.",
+        "caracteristicas": [
+            "6 lapiceros punta de aguja",
+            "Tinta gel de secado rápido",
+            "Cuerpo ergonómico soft-grip",
+            "Incluye estuche transparente"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 8,
+        "categoria": "lapiceros",
+        "nombre": "Bolígrafos Glitter",
+        "precio": "$12.000",
+        "imagen": "/assets/productos/lapiceros/premium.svg",
+        "imagenes": [
+            "/assets/productos/lapiceros/premium.svg",
+            "/assets/productos/lapiceros/azul.svg"
+        ],
+        "badge": "Bestseller",
+        "descripcion": "Tinta con escarcha para brillar en cada palabra.",
+        "caracteristicas": [
+            "Tinta con micro-partículas de brillo",
+            "Escritura fluida sin cortes",
+            "Punta media 1.0mm",
+            "Ideales para tarjetas oscuras"
+        ],
+        "disponibilidad": "Agotado"
+    },
+    {
+        "id": 9,
+        "categoria": "lapiceros",
+        "nombre": "Kit Escritura Creativa",
+        "precio": "$28.000",
+        "imagen": "/assets/productos/lapiceros/set.svg",
+        "imagenes": [
+            "/assets/productos/lapiceros/set.svg",
+            "/assets/productos/lapiceros/azul.svg"
+        ],
+        "descripcion": "Todo lo que necesitas para tus proyectos de lettering.",
+        "caracteristicas": [
+            "Incluye 2 brush pens",
+            "3 lapiceros de gel",
+            "1 resaltador pastel",
+            "Guía básica de lettering"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 10,
+        "categoria": "lapiceros",
+        "nombre": "Gel Escarcha",
+        "precio": "$7.000",
+        "imagen": "/assets/productos/lapiceros/escarcha.svg",
+        "imagenes": [
+            "/assets/productos/lapiceros/escarcha.svg"
+        ],
+        "descripcion": "Dale un toque de brillo a tus textos con nuestra tinta especial.",
+        "caracteristicas": [
+            "Tinta pigmentada brillante",
+            "Resistente al agua",
+            "Grip de goma cómodo",
+            "Tapa con clip metálico"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 11,
+        "categoria": "lapiceros",
+        "nombre": "Pluma Caligrafía",
+        "precio": "$20.000",
+        "imagen": "/assets/productos/lapiceros/caligrafia.svg",
+        "imagenes": [
+            "/assets/productos/lapiceros/caligrafia.svg"
+        ],
+        "badge": "Especial",
+        "descripcion": "Punta especial para lettering y caligrafía artística.",
+        "caracteristicas": [
+            "Plumín de acero inoxidable",
+            "Recargable con cartuchos",
+            "Diseño retro elegante",
+            "Mango antideslizante"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 12,
+        "categoria": "lapiceros",
+        "nombre": "Multicolor 4-en-1",
+        "precio": "$9.000",
+        "imagen": "/assets/productos/lapiceros/multicolor.svg",
+        "imagenes": [
+            "/assets/productos/lapiceros/multicolor.svg"
+        ],
+        "descripcion": "Cuatro tintas esenciales en un solo bolígrafo de diseño.",
+        "caracteristicas": [
+            "Azul, negro, rojo y verde",
+            "Mecanismo de cambio suave",
+            "Cuerpo pastel decorado",
+            "Punta fina 0.5mm"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 13,
+        "categoria": "sticker",
+        "nombre": "Pack Stickers Kawaii",
+        "precio": "$15.000",
+        "imagen": "/assets/productos/sticker/juveniles.svg",
+        "imagenes": [
+            "/assets/productos/sticker/juveniles.svg",
+            "/assets/productos/sticker/minimalistas.svg"
+        ],
+        "badge": "Nuevo",
+        "descripcion": "Personajes adorables para decorar tu mundo.",
+        "caracteristicas": [
+            "50 stickers individuales",
+            "Material vinilo resistente",
+            "Acabado mate suave",
+            "Troquelado de precisión"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 14,
+        "categoria": "sticker",
+        "nombre": "Stickers Motivacionales",
+        "precio": "$12.000",
+        "imagen": "/assets/productos/sticker/minimalistas.svg",
+        "imagenes": [
+            "/assets/productos/sticker/minimalistas.svg",
+            "/assets/productos/sticker/juveniles.svg"
+        ],
+        "badge": "Popular",
+        "descripcion": "Frases positivas para inspirar tu día a día.",
+        "caracteristicas": [
+            "Hojas con 24 stickers",
+            "Palabras en foil dorado",
+            "Papel adhesivo premium",
+            "Diseños inspiradores"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 15,
+        "categoria": "sticker",
+        "nombre": "Stickers Decorativos",
+        "precio": "$10.000",
+        "imagen": "/assets/productos/sticker/emoji.svg",
+        "imagenes": [
+            "/assets/productos/sticker/emoji.svg"
+        ],
+        "descripcion": "Elementos artísticos perfectos para tu planner.",
+        "caracteristicas": [
+            "Formas geométricas y flores",
+            "Colores pastel coordinados",
+            "Ideal para scrapbooking",
+            "Pack de 3 hojas"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 16,
+        "categoria": "sticker",
+        "nombre": "Vintage Aesthetic",
+        "precio": "$18.000",
+        "imagen": "/assets/productos/sticker/vintage.svg",
+        "imagenes": [
+            "/assets/productos/sticker/vintage.svg"
+        ],
+        "badge": "Bestseller",
+        "descripcion": "Inspiración retro para tus proyectos creativos.",
+        "caracteristicas": [
+            "Imágenes estilo antiguo",
+            "Efecto papel envejecido",
+            "40 piezas variadas",
+            "Incluye etiquetas postales"
+        ],
+        "disponibilidad": "Pocas unidades"
+    },
+    {
+        "id": 17,
+        "categoria": "sticker",
+        "nombre": "Holo Stars",
+        "precio": "$16.000",
+        "imagen": "/assets/productos/sticker/holo.svg",
+        "imagenes": [
+            "/assets/productos/sticker/holo.svg"
+        ],
+        "descripcion": "Efecto holográfico que brilla con la luz.",
+        "caracteristicas": [
+            "Estrellas de varios tamaños",
+            "Brillo arcoíris real",
+            "Adhesivo extra fuerte",
+            "60 stickers por pack"
+        ],
+        "disponibilidad": "Disponible"
+    },
+    {
+        "id": 18,
+        "categoria": "sticker",
+        "nombre": "Botánico Realista",
+        "precio": "$14.000",
+        "imagen": "/assets/productos/sticker/botanico.svg",
+        "imagenes": [
+            "/assets/productos/sticker/botanico.svg"
+        ],
+        "descripcion": "Flores y plantas con ilustraciones detalladas.",
+        "caracteristicas": [
+            "Ilustraciones a acuarela",
+            "Hojas semitransparentes",
+            "Especies identificadas",
+            "Pack de 20 stickers"
+        ],
+        "disponibilidad": "Disponible"
+    }
+]

@@ -1,0 +1,4 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 50 Q75 25 100 50 T150 50 T200 50 T250 50 Q275 75 250 100 T250 150 T250 200 T250 250 Q225 275 200 250 T150 250 T100 250 T50 250 Q25 225 50 200 T50 150 T50 100 T50 50 Z" 
+        fill="white" stroke="#FFB6D9" stroke-width="8" />
+</svg>
