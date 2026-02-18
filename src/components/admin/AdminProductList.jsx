@@ -39,7 +39,7 @@ const AdminProductList = ({ products, onEdit, onDelete, loading }) => {
                                         {product.featured && <span className="tag-featured">🏠 Destacado</span>}
                                     </div>
                                 </td>
-                                <td><span className="tag-category">{product.category}</span></td>
+                                <td><span className="tag-category">{product.categories?.name}</span></td>
                                 <td><strong>{formatCOP(product.price)}</strong></td>
                                 <td>
                                     <span className={`stock-badge ${product.stock <= 5 ? 'critical' : ''}`}>

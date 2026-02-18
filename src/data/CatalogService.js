@@ -12,7 +12,8 @@ export const CatalogService = {
         if (!p) return null;
         return {
             id: p.id,
-            categoria: p.category,
+            category_id: p.category_id,
+            categoria: p.categories?.name || '', // Mapear nombre desde join
             nombre: p.name,
             name: p.name, // Support both for compatibility
             precio_raw: p.price || 0, // Keep raw number
@@ -27,16 +28,24 @@ export const CatalogService = {
     },
 
     /**
-     * Get all products filtered by category
+     * Get all products filtered by category ID
      */
-    getProductsByCategory: async (category) => {
+    getProductsByCategory: async (categoryId) => {
+        if (!categoryId) {
+            console.warn("CatalogService: categoryId is undefined or null. Aborting fetch.");
+            return [];
+        }
+
+        console.log("CatalogService: Fetching products for category_id:", categoryId);
+
         try {
             const { data, error } = await supabase
                 .from('products')
-                .select('*')
-                .eq('category', category);
+                .select('*, categories(name)')
+                .eq('category_id', categoryId);
 
             if (error) throw error;
+            console.log(`CatalogService: Found ${data?.length || 0} products for category_id: ${categoryId}`);
             return (data || []).map(CatalogService.mapProduct);
         } catch (error) {
             console.error("Error fetching products by category:", error);
@@ -51,7 +60,7 @@ export const CatalogService = {
         try {
             const { data, error } = await supabase
                 .from('products')
-                .select('*')
+                .select('*, categories(name)')
                 .eq('id', id)
                 .single();
 
@@ -66,12 +75,19 @@ export const CatalogService = {
     /**
      * Get related products from the same category
      */
-    getRelatedProducts: async (category, currentId, limit = 4) => {
+    getRelatedProducts: async (categoryId, currentId, limit = 4) => {
+        if (!categoryId) {
+            console.warn("CatalogService: categoryId for related products is undefined. Aborting.");
+            return [];
+        }
+
+        console.log("CatalogService: Fetching related products for category_id:", categoryId);
+
         try {
             const { data, error } = await supabase
                 .from('products')
-                .select('*')
-                .eq('category', category)
+                .select('*, categories(name)')
+                .eq('category_id', categoryId)
                 .neq('id', currentId)
                 .limit(limit);
 

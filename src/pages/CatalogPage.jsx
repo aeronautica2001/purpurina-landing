@@ -14,14 +14,22 @@ const CatalogPage = () => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                // Fetch products
-                const prodData = await CatalogService.getProductsByCategory(category);
-                setProducts(prodData);
-
-                // Try to find the category display name from the dynamic list
+                // 1. Fetch ALL categories to resolve the ID from the name in URL
                 const cats = await CatalogService.getCategories();
                 const currentCat = cats.find(c => c.name.toLowerCase() === category.toLowerCase());
-                setCategoryName(currentCat ? currentCat.name : category.charAt(0).toUpperCase() + category.slice(1));
+
+                if (currentCat) {
+                    console.log(`CatalogPage: Resolved category name "${category}" to ID: ${currentCat.id}`);
+                    setCategoryName(currentCat.name);
+                    // 2. Fetch products using the real UUID
+                    const prodData = await CatalogService.getProductsByCategory(currentCat.id);
+                    setProducts(prodData);
+                } else {
+                    console.warn(`CatalogPage: Could not resolve category name "${category}" from fetched categories.`);
+                    // Fallback or handle not found
+                    setCategoryName(category.charAt(0).toUpperCase() + category.slice(1));
+                    setProducts([]);
+                }
 
             } catch (error) {
                 console.error("Error fetching data:", error);
